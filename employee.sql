@@ -1,7 +1,3 @@
--- Need a department table
--- Role table 
--- Employee table
-
 DROP DATABASE IF EXISTS employee_DB;
 CREATE DATABASE employee_DB;
 
@@ -29,3 +25,5 @@ CREATE TABLE employees (
   manager_id INT NULL, 
   PRIMARY KEY (id)
 );
+
+-- CREATE TABLE W/ INFO IN IT!!
