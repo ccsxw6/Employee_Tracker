@@ -14,8 +14,6 @@ const connection = mysql.createConnection({
     promptUser();
   });
 
-// ask user what they want to do, depending on what they want, take them there
-// Add departments, roles, employees - View departments, roles, employees - Update employee roles
 
 const promptUser = () =>{
     inquirer.prompt([
@@ -30,27 +28,35 @@ const promptUser = () =>{
     ]).then((answer) => {
         if(answer.question === 'Add Departments') {
             //call function for add departments
+            //break
         }
         if(answer.question === 'Add Roles') {
             //call function for add roles
+            //break
         }
         if(answer.question === 'Add Employees') {
             //call function for Add Employees
+            //break
         }
         if(answer.question === 'View Departments') {
             //call function for View Departments
+            //break
         }
         if(answer.question === 'View Roles') {
             //call function for View Roles
+            //break
         }
         if(answer.question === 'View Employees') {
             //call function for View Employees
+            //break
         }
         if(answer.question === 'Update Employee Roles') {
             //call function for Update Employee Roles
+            //break
         }
         if(answer.question === 'End') {
             //call function for End
+            //break
         }
       })
 } 
