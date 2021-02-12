@@ -26,37 +26,38 @@ const promptUser = () => {
                 "Update Employee Roles", "End"],
         },
     ]).then((answer) => {
-        if (answer.question === 'Add Departments') {
-            addDepartment()
-            //break?
-        }
-        if (answer.question === 'Add Roles') {
-            addRoles()
-            //break
-        }
-        if (answer.question === 'Add Employees') {
-            addEmployees()
-            //break
-        }
-        if (answer.question === 'View Departments') {
-            viewDepartments()
-            //break
-        }
-        if (answer.question === 'View Roles') {
-            viewRoles()
-            //break
-        }
-        if (answer.question === 'View Employees') {
+        switch(answer.question) {
+            case 'Add Departments':
+                addDepartment();
+            break;
+        
+            case 'Add Roles':
+                addRoles();
+            break;
+        
+            case 'Add Employees':
+                addEmployees()
+            break
+
+            case 'View Departments':
+                viewDepartments()
+            break
+
+            case'View Roles':
+                viewRoles()
+            break
+        
+            case 'View Employees':
             viewEmployees()
-            //break
-        }
-        if (answer.question === 'Update Employee Roles') {
-            updateEmployeeRoles()
-            //break
-        }
-        if (answer.question === 'End') {
-            console.log("Thank you!")
-            // return or break? Or call promptuser again? 
+            break
+        
+            case 'Update Employee Roles':
+                updateEmployeeRoles()
+            break
+        
+            case 'End':
+                console.log("Thank you!")
+            promptUser()
         }
     })
 }
