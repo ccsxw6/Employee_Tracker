@@ -32,11 +32,10 @@ INSERT INTO department (department_name) VALUES ('Human Resources');
 INSERT INTO department (department_name) VALUES ('Accounting');
 
 --Employee Role Table Information
-INSERT INTO employee_role (title, salary, department_id) VALUES ('Marketing Director', '100,000', '10');
-INSERT INTO employee_role (title, salary, department_id) VALUES ('Human Resources Director', '100,000', '11');
-INSERT INTO employee_role (title, salary, department_id) VALUES ('Accounting Director', '100,000', '12');
+INSERT INTO employee_role (title, salary, department_id) VALUES ('Manager', '100,000', '1');
+INSERT INTO employee_role (title, salary, department_id) VALUES ('Employee', '50,000', '2');
+
 
 --Employee Personal Table Information
 INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES ('Chris', 'Stanfill', '20', '30');
 INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES ('The', 'Donald', '21', '30');
-INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES ('Chris', 'Stanfill', '22', '30');
