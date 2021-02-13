@@ -66,7 +66,7 @@ const promptUser = () => {
 };
 promptUser();
 
-// allows user to view all departments currently in the database
+
 const viewalldepartments = () => {
   connection.query("SELECT * FROM department", (err, answer) => {
     console.table(answer);
@@ -74,7 +74,7 @@ const viewalldepartments = () => {
   promptUser();
 }
 
-// allows user to view all employee roles currently in the database
+
 const viewallroles = () => {
   connection.query("SELECT * FROM role", (err, answer) => {
     console.table(answer);
@@ -82,7 +82,7 @@ const viewallroles = () => {
   promptUser();
 }
 
-// allows user to view all employees currently in the database
+
 const viewallEmployeesloyees = () => {
   console.log("retrieving employess from database");
   var fancyQuery =
@@ -93,7 +93,7 @@ const viewallEmployeesloyees = () => {
   promptUser();
 }
 
-// allows user to add a new employee to database
+
 const addEmployee = () =>  {
   inquirer.prompt([
       {
